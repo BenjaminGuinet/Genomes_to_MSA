@@ -50,13 +50,14 @@ ______________
 
 ## Outputfiles :
 
-***-blocks_coords.gff*** :  GFF file output from Sibeliaz.
-***-alignment.maf*** : Maf file output from Sibeliaz.
-***-output_sequences.fasta*** : MSA file containing all the homologous sites found in at least 2 species.
-***-output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites).
-***-output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
+- ***blocks_coords.gff*** :  GFF file output from Sibeliaz.
+- ***alignment.maf*** : Maf file output from Sibeliaz.
+- ***output_sequences.fasta*** : MSA file containing all the homologous sites found in at least 2 species.
+- ***output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites).
+- ***output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
 
 The name the contigs in the final fasta file will be the name of your Genomes files without the extension, so in this exampel the expected output would be : 
+
 ```
 >Genome1
 AAAXXXXX
@@ -67,6 +68,9 @@ AAAXXXXX
 >Genome4
 AAAXXXXX
 ```
+
+
+A full run including NJ tree on 14 Yersinia genomes with 100,000 selected sites took around 30min of run. 
 
 
 
