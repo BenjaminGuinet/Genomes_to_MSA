@@ -35,7 +35,7 @@ options:
                         Set to yes if you want a quick phylogeny made with rapidnj.
 ```
 
-Note : you will need Sibeliaz and optionnaly rapidnj if asked to be installed as well as few python packages (see header of the python script to install them).
+Note : you will need Sibeliaz and optionnaly rapidnj (if asked) to be installed as well as few python packages (see header of the python script to install them).
 
 ______________
 
