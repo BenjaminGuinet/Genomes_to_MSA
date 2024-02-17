@@ -42,6 +42,8 @@ ______________
 
 ## Expected input table file format 
 ```
+***cat Yersinia_genome.tab***
+
 /path1/path2/Genome1.fna
 /path1/path2/Genome2.fna
 /path1/path2/Genome3.fna
