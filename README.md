@@ -7,7 +7,6 @@ This script converts a list of genome files into a Multiple Sequence Alignment (
 ## Usage Example
 
 ```
-bash
 python3 Genome_to_MSA.py -g Example_dataset/Yersinia_genome.tab -o Yersinia_Genome_to_MSA_dir -nsites 10000 -K 15 -t 16 --Run_NJ_phylogeny yes
 ```
 
