@@ -6,12 +6,14 @@ This tool converts a list of genome files into a Multiple Sequence Alignment (MS
 
 ## Usage Example
 
-```bash
-python3 Genome_to_MSA.py -g Yersinia_genomes/Yersinia_genome.tab -o Yersinia_Genome_to_MSA_dir -nsites 10000 -K 15 -t 16 --Run_NJ_phylogeny yes```
+```
+bash
+python3 Genome_to_MSA.py -g Yersinia_genomes/Yersinia_genome.tab -o Yersinia_Genome_to_MSA_dir -nsites 10000 -K 15 -t 16 --Run_NJ_phylogeny yes
+```
 
 
 ## Available options :
-
+```
 usage: Genome_to_MSA.py [-h] [-g GENOME_PATH] [-o OUTPUT_DIR] [-nsites NSITES] [-K K] [-t THREADS] [-Taxon TAXON] [-NJ RUN_NJ_PHYLOGENY]
 
 Allow to generate a MSA from a list of genomes using Sibeliaz.
@@ -32,28 +34,39 @@ options:
                         nsites. Name of Taxa should be the name of the Genome file without the full path and remove everythin after the '.'
   -NJ RUN_NJ_PHYLOGENY, --Run_NJ_phylogeny RUN_NJ_PHYLOGENY
                         Set to yes if you want a quick phylogeny made with rapidnj.
-
+```
 
 Note : you will need Sibeliaz and optionnaly rapidnj if asked to be installed as well as few python packages (see header of the python script to install them).
 
 ______________
 
 ## Example output table file
-
+```
 /path1/path2/Genome1.fna
 /path1/path2/Genome2.fna
 /path1/path2/Genome3.fna
 /path1/path2/Genome4.fna
-
+```
 
 ## Outputfiles :
 
-***-blocks_coords.gff*** :  GFF file output from Sibeliaz
-***-alignment.maf*** : Maf file output from Sibeliaz
-***-output_sequences.fasta*** : MSA file containing all the homologous sites found in at least 2 species
-***-output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites)
+***-blocks_coords.gff*** :  GFF file output from Sibeliaz.
+***-alignment.maf*** : Maf file output from Sibeliaz.
+***-output_sequences.fasta*** : MSA file containing all the homologous sites found in at least 2 species.
+***-output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites).
 ***-output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
 
+The name the contigs in the final fasta file will be the name of your Genomes files without the extension, so in this exampel the expected output would be : 
+```
+>Genome1
+AAAXXXXX
+>Genome2
+AAAXXXXX
+>Genome3
+AAAXXXXX
+>Genome4
+AAAXXXXX
+```
 
 
 
