@@ -58,13 +58,6 @@ ______________
 - ***output_sequences.fasta*** : MSA file containing all the homologous sites found among species.
 - ***output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites).
 
-- ***output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
-
-Note :
-The pipeline generates a Neighbor-Joining (NJ) Newick file, offering a rapid and straightforward method for constructing phylogenetic trees. However, for more accurate and robust evolutionary interpretations, we highly recommend further analysis using Maximum Likelihood (ML) or Bayesian inference methods.
-
-
-
 The contig names in the final fasta files will be the name of your Genomes files without the extension, so in this example the expected output would be : 
 
 ```
@@ -78,6 +71,14 @@ AAAXXXXX
 AAAXXXXX
 ```
 
+***optional:***
+
+- ***output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
+
+The pipeline generates a Neighbor-Joining (NJ) Newick file, offering a rapid and straightforward method for constructing phylogenetic trees. However, for more accurate and robust evolutionary interpretations, we highly recommend further analysis using Maximum Likelihood (ML) or Bayesian inference methods.
+
+
+***Time***
 
 A full run including NJ tree on 14 Yersinia genomes with 100,000 selected sites took around 30min of run. 
 
