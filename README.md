@@ -55,7 +55,7 @@ ______________
 
 - ***blocks_coords.gff*** :  GFF file output from Sibeliaz.
 - ***alignment.maf*** : Maf file output from Sibeliaz.
-- ***output_sequences.fasta*** : MSA file containing all the homologous sites found among all species.
+- ***output_sequences.fasta*** : MSA file containing all the homologous sites found among species.
 - ***output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites).
 - ***output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
 
