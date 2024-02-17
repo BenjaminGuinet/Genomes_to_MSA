@@ -4,6 +4,8 @@
 
 This script converts a list of genome files into a Multiple Sequence Alignment (MSA) file aligned with the Sibeliaz tool (Ilia Minkin & Paul Medvedev 2020), ready for phylogenetic analysis. It also includes an option to generate a RapidNJ tree.
 
+This method is only suitable for closely related genomes (idealy for strains from the same species). 
+
 ## Usage Example
 
 ```
