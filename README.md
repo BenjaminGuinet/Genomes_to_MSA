@@ -40,13 +40,14 @@ Note : you will need Sibeliaz and optionnaly rapidnj if asked to be installed as
 
 ______________
 
-## Example output table file
+## Expected input table file format 
 ```
 /path1/path2/Genome1.fna
 /path1/path2/Genome2.fna
 /path1/path2/Genome3.fna
 /path1/path2/Genome4.fna
 ```
+______________
 
 ## Outputfiles :
 
