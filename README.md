@@ -56,7 +56,7 @@ ______________
 - ***output_sequences_trimmed.fasta*** : MSA file containing a set o X sites selected (n=nsites).
 - ***output_sequences_trimmed.nwk*** : Newik file if option --Run_NJ_phylogeny was set to yes (default is 100 bootstraps done).
 
-The name the contigs in the final fasta file will be the name of your Genomes files without the extension, so in this exampel the expected output would be : 
+The contig names in the final fasta files will be the name of your Genomes files without the extension, so in this example the expected output would be : 
 
 ```
 >Genome1
