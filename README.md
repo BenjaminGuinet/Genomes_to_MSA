@@ -1,19 +1,16 @@
+# GENOMES TO MSA 
 
-██████╗ ███████╗███╗   ██╗ ██████╗ ███╗   ███╗███████╗███████╗    ████████╗ ██████╗     ███╗   ███╗███████╗ █████╗ 
-██╔════╝ ██╔════╝████╗  ██║██╔═══██╗████╗ ████║██╔════╝██╔════╝    ╚══██╔══╝██╔═══██╗    ████╗ ████║██╔════╝██╔══██╗
-██║  ███╗█████╗  ██╔██╗ ██║██║   ██║██╔████╔██║█████╗  ███████╗       ██║   ██║   ██║    ██╔████╔██║███████╗███████║
-██║   ██║██╔══╝  ██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══╝  ╚════██║       ██║   ██║   ██║    ██║╚██╔╝██║╚════██║██╔══██║
-╚██████╔╝███████╗██║ ╚████║╚██████╔╝██║ ╚═╝ ██║███████╗███████║       ██║   ╚██████╔╝    ██║ ╚═╝ ██║███████║██║  ██║
- ╚═════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝       ╚═╝    ╚═════╝     ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
+## Description
+
+This tool converts a list of genome files into a Multiple Sequence Alignment (MSA) file aligned with the Sibeliaz tool, ready for phylogenetic analysis. It also includes an option to generate a RapidNJ tree.
+
+## Usage Example
+
+```bash
+python3 Genome_to_MSA.py -g Yersinia_genomes/Yersinia_genome.tab -o Yersinia_Genome_to_MSA_dir -nsites 10000 -K 15 -t 16 --Run_NJ_phylogeny yes```
 
 
-Input a table with a list of genome files > output a MSA file aligned with the Sibeliaz ready for phylogenetic analysis (+ RapidNJ tree included)
-
-Usage example : 
-
-'''python3 Genome_to_MSA.py -g Yersinia_genomes/Yersinia_genome.tab -o Yersinia_Genome_to_MSA_dir -nsites 10000 -K 15 -t 16 --Run_NJ_phylogeny yes'''
-
-Available options : 
+## Available options :
 
 usage: Genome_to_MSA.py [-h] [-g GENOME_PATH] [-o OUTPUT_DIR] [-nsites NSITES] [-K K] [-t THREADS] [-Taxon TAXON] [-NJ RUN_NJ_PHYLOGENY]
 
@@ -27,7 +24,7 @@ options:
                         The output directory where will be saved files including the alignement file
   -nsites NSITES, --nsites NSITES
                         The number of desired sites in the final MSA (taken randomly)
-  -K K, --K K           For small datasets, like bacteria, we recommend k=15, and for mammalian-sized genomes k=25. The default is 25.
+  -K K, --K K           For small datasets, like bacteria, Sibeliaz recommend k=15, and for mammalian-sized genomes k=25. The default is 25.
   -t THREADS, --threads THREADS
                         Number of threads to use.
   -Taxon TAXON, --Taxon TAXON
@@ -35,3 +32,6 @@ options:
                         nsites. Name of Taxa should be the name of the Genome file without the full path and remove everythin after the '.'
   -NJ RUN_NJ_PHYLOGENY, --Run_NJ_phylogeny RUN_NJ_PHYLOGENY
                         Set to yes if you want a quick phylogeny made with rapidnj.
+
+
+Note : you will need Sibeliaz and optionnaly rapidnj if asked to be installed as well as few python packages (see header of the python script to install them). 
