@@ -53,7 +53,9 @@ print("Sibeliaz is a whole-genome alignment and locally-coliinear blocks constru
 print("\n")
 print("- Ilia Minkin")
 print("- Paul Medvedev")
+print("\n")
 
+print("Sibeliaz method targets closely related sequences, such as strains of the same species.")
 
 sibeliaz_output_dir=args.output_dir
 Input_genome_tab=args.genome_path
