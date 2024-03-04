@@ -112,7 +112,7 @@ command_prefix = "sibeliaz"
 # Full command
 command = f"{command_prefix} -o {sibeliaz_output_dir} -k {K} -t {threads} {paths}"
 # Execute the command
-subprocess.run(command, shell=True, capture_output=True, text=True)
+subprocess.run(command, shell=True, text=True)
 print(command)
 # Parse the MAF file geenrated by Sibeliaz
 def parse_maf(file_path):
